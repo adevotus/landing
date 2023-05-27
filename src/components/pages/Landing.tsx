@@ -1,3 +1,4 @@
+import Slider from "../ui/Slider"
 
 
 function Landing() {
@@ -35,7 +36,7 @@ function Landing() {
               </div>
             </div>
           </div>
-          <div className="header-mid gray-bg">
+          {/* <div className="header-mid gray-bg">
             <div className="container">
               <div className="row d-flex align-items-center">
                 <div className="col-xl-3 col-lg-3 col-md-3 d-none d-md-block">
@@ -50,7 +51,7 @@ function Landing() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="header-bottom header-sticky">
             <div className="container">
               <div className="row align-items-center">
@@ -104,77 +105,41 @@ function Landing() {
         <div className="container">
           <div className="trending-main">
             <div className="row">
-              <div className="col-lg-8">
-               
-                <div className="slider-active">
-                 
-                  <div className="single-slider">
-                    <div className="trending-top mb-30">
-                      <div className="trend-top-img">
-                        <img src="./src/assets/img/trending/trending_top2.jpg" />
-                        <div className="trend-top-cap">
-                          <span className="bgr" data-animation="fadeInUp" data-delay=".2s" data-duration="1000ms">Business</span>
-                          <h2><a href="latest_news.html" data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms">Anna Lora Stuns In White At Her Australian Premiere</a></h2>
-                          <p data-animation="fadeInUp" data-delay=".6s" data-duration="1000ms">by Alice cloe   -   Jun 19, 2020</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="single-slider">
-                    <div className="trending-top mb-30">
-                      <div className="trend-top-img">
-                        <img src="./src/assets/img/trending/trending_top02.jpg" />
-                        <div className="trend-top-cap">
-                          <span className="bgr" data-animation="fadeInUp" data-delay=".2s" data-duration="1000ms">Business</span>
-                          <h2><a href="latest_news.html" data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms">Anna Lora Stuns In White At Her Australian Premiere</a></h2>
-                          <p data-animation="fadeInUp" data-delay=".6s" data-duration="1000ms">by Alice cloe   -   Jun 19, 2020</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="single-slider">
-                    <div className="trending-top mb-30">
-                      <div className="trend-top-img">
-                        <img src="./src/assets/img/trending/trending_top03.jpg" />
-                        <div className="trend-top-cap">
-                          <span className="bgr" data-animation="fadeInUp" data-delay=".2s" data-duration="1000ms">Business</span>
-                          <h2><a href="latest_news.html" data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms">Anna Lora Stuns In White At Her Australian Premiere</a></h2>
-                          <p data-animation="fadeInUp" data-delay=".6s" data-duration="1000ms">by Alice cloe   -   Jun 19, 2020</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4">
+            <div className="col-lg-4">
                 <div className="row">
                   <div className="col-lg-12 col-md-6 col-sm-6">
                     <div className="trending-top mb-30">
                       <div className="trend-top-img">
                         <img src="./src/assets/img/trending/trending_top3.jpg" />
                         <div className="trend-top-cap trend-top-cap2">
-                          <span className="bgb">FASHION</span>
-                          <h2><a href="latest_news.html">Secretart for Economic Air
-                            plane that looks like</a></h2>
-                          <p>by Alice cloe   -   Jun 19, 2020</p>
+                         
+                          <h2><a href="latest_news.html">DR. Selere Mgerene</a></h2>
+                            <span className="bgb">CEO</span>
                         </div>
                       </div>
+                      <p className="text-justify mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dicta pariatur neque magnam assumenda quod, iusto necessitatibus libero consequuntur maiores voluptatum cumque dolores ipsum ut aperiam ullam adipisci porro alias. </p>
                     </div>
                   </div>
                   <div className="col-lg-12 col-md-6 col-sm-6">
                     <div className="trending-top mb-30">
-                      <div className="trend-top-img">
+                        <p className="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab odit in reiciendis eos, unde non doloribus, iste numquam impedit explicabo eveniet dolorum deleniti nostrum? Aut natus inventore ipsum at totam.</p>
+                      {/* <div className="trend-top-img">
                         <img src="./src/assets/img/trending/trending_top4.jpg" />
                         <div className="trend-top-cap trend-top-cap2">
-                          <span className="bgg">TECH </span>
+                          <span className="bgg">Tench </span>
                           <h2><a href="latest_news.html">Secretart for Economic Air plane that looks like</a></h2>
-                          <p>by Alice cloe   -   Jun 19, 2020</p>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
               </div>
+              <div className="col-lg-8">
+               
+              
+                <Slider/>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -575,52 +540,12 @@ function Landing() {
                 </div>
               </div>
          
-              <div className="banner-one mt-20 mb-30">
+              {/* <div className="banner-one mt-20 mb-30">
                 <img src="./src/assets/img/gallery/body_card1.png" />
-              </div>
+              </div> */}
             </div>
             <div className="col-lg-4">
              
-              <div className="single-follow mb-45">
-                <div className="single-box">
-                  <div className="follow-us d-flex align-items-center">
-                    <div className="follow-social">
-                      <a href="#"><img src="./src/assets/img/news/icon-fb.png" /></a>
-                    </div>
-                    <div className="follow-count">
-                      <span>8,045</span>
-                      <p>Fans</p>
-                    </div>
-                  </div>
-                  <div className="follow-us d-flex align-items-center">
-                    <div className="follow-social">
-                      <a href="#"><img src="./src/assets/img/news/icon-tw.png" /></a>
-                    </div>
-                    <div className="follow-count">
-                      <span>8,045</span>
-                      <p>Fans</p>
-                    </div>
-                  </div>
-                  <div className="follow-us d-flex align-items-center">
-                    <div className="follow-social">
-                      <a href="#"><img src="./src/assets/img/news/icon-ins.png" /></a>
-                    </div>
-                    <div className="follow-count">
-                      <span>8,045</span>
-                      <p>Fans</p>
-                    </div>
-                  </div>
-                  <div className="follow-us d-flex align-items-center">
-                    <div className="follow-social">
-                      <a href="#"><img src="./src/assets/img/news/icon-yo.png" /></a>
-                    </div>
-                    <div className="follow-count">
-                      <span>8,045</span>
-                      <p>Fans</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
               
               <div className="most-recent-area">
               
@@ -665,17 +590,13 @@ function Landing() {
         </div>
       </section>
      
-      <div className="weekly2-news-area pt-50 pb-30 gray-bg">
+      <div className="weekly2-news-area pt-50 pb-30 gray-bg"style={{marginTop:-2}}>
         <div className="container">
           <div className="weekly2-wrapper">
             <div className="row">
            
-              <div className="col-lg-3">
-                <div className="home-banner2 d-none d-lg-block">
-                  <img src="./src/assets/img/gallery/body_card2.png" />
-                </div>
-              </div>
-              <div className="col-lg-9">
+              
+              <div className="col-lg-12">
                 <div className="slider-wrapper">
                   
                   <div className="row">
@@ -722,7 +643,7 @@ function Landing() {
                        
                         <div className="weekly2-single">
                           <div className="weekly2-img">
-                            <img src="assets/img/gallery/weeklyNews2.png" />
+                            <img src="./src/assets/img/gallery/weeklyNews2.png" />
                           </div>
                           <div className="weekly2-caption">
                             <h4><a href="#">Scarlett’s disappointment at latest accolade</a></h4>
@@ -962,17 +883,7 @@ function Landing() {
         </div>
       </div>
      
-      <div className="banner-area gray-bg pt-90 pb-90">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10 col-md-10">
-              <div className="banner-one">
-                <img src="./src/assets/img/gallery/body_card3.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     
       
     </main>
     <footer>
@@ -1001,36 +912,36 @@ function Landing() {
               <div className="col-xl-4 col-lg-4 col-md-5 col-sm-7">
                 <div className="single-footer-caption mb-50">
                   <div className="footer-tittle">
-                    <h4>Popular post</h4>
+                    <h4>Popular Links</h4>
                   </div>
                 
                   <div className="whats-right-single mb-20">
-                    <div className="whats-right-img">
+                    {/* <div className="whats-right-img">
                       <img src="./src/assets/img/gallery/footer_post1.png" />
-                    </div>
+                    </div> */}
                     <div className="whats-right-cap">
-                      <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                      <p>Jhon  |  2 hours ago</p>
+                      <h4><a href="latest_news.html">About</a></h4>
+                      {/* <p>Jhon  |  2 hours ago</p> */}
                     </div>
                   </div>
                  
                   <div className="whats-right-single mb-20">
-                    <div className="whats-right-img">
+                    {/* <div className="whats-right-img">
                       <img src="./src/assets/img/gallery/footer_post2.png" />
-                    </div>
+                    </div> */}
                     <div className="whats-right-cap">
-                      <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                      <p>Jhon  |  2 hours ago</p>
+                      <h4><a href="latest_news.html">Contancts</a></h4>
+                      {/* <p>Jhon  |  2 hours ago</p> */}
                     </div>
                   </div>
                  
                   <div className="whats-right-single mb-20">
-                    <div className="whats-right-img">
+                    {/* <div className="whats-right-img">
                       <img src="./src/assets/img/gallery/footer_post3.png" />
-                    </div>
+                    </div> */}
                     <div className="whats-right-cap">
-                      <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                      <p>Jhon  |  2 hours ago</p>
+                      <h4><a href="latest_news.html">Service</a></h4>
+                      {/* <p>Jhon  |  2 hours ago</p> */}
                     </div>
                   </div>
                 </div>
@@ -1053,7 +964,7 @@ function Landing() {
                 <div className="col-xl-12 ">
                   <div className="footer-copy-right text-center">
                     <p>
-                      Copyright © All rights reserved | This template is made with <i className="fa fa-heart" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                      Copyright © All rights reserved | 2023     <a href="z3" target="_blank"></a>
                   </p>
                   </div>
                 </div>
